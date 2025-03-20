@@ -1,0 +1,100 @@
+# Conhecendo métodos úteis da classe string 
+
+# nome = "gUIlherME"
+
+# print(nome.upper()) #letras maiusculas
+# print(nome.lower())#letras minusculas 
+# print(nome.title())#Somente a 1 letra maiuscula 
+
+# texto = "  Olá mundo!    "
+
+# print(texto + ".") 
+# print(texto.strip() + ".")#remove o espaço do começo e do fim 
+# print(texto.rstrip() + ".")#remove o espaço da dierita 
+# print(texto.lstrip() + ".")#remove o espaço da esquerda
+
+# menu = "Python"
+
+# print("####" + menu + "####")
+# print(menu.center(16))
+# print(menu.center(16, "#"))
+# print("*".join(menu))
+
+#-------------Interpolação de variaveis --------------#
+
+
+# nome = "Guilherme"
+# idade = 28
+# profissao = "Progamador"
+# linguagem = "Python"
+# saldo = 45.435
+
+# # dados = {"nome": "Guilherme", "idade": 28}
+
+# # print("Nome: %s Idade: %d" % (nome, idade))
+
+# # print("Nome: {} Idade: {}".format(nome, idade))
+
+# # print("Nome: {1} Idade: {0}".format(idade, nome))
+# # print("Nome: {1} Idade: {0} Nome: {1} {1}".format(idade, nome))
+
+# # print("Nome: {nome} Idade: {idade}".format(nome=nome, idade=idade))
+# # print("Nome: {name} Idade: {age} {name} {name} {age}".format(age=idade, name=nome))
+# # print("Nome: {nome} Idade: {idade}".format(**dados))
+
+# print(f"Nome: {nome} Idade: {idade}")
+# print(f"Nome: {nome} Idade: {idade} Saldo: {saldo:.2f}")
+# print(f"Nome: {nome} Idade: {idade} Saldo: {saldo:8.2f}")
+
+
+#-------------Fatiamneto de String  --------------#
+# nome ='Sara Vieira de Araujo'
+# print(nome[0])
+# print(nome[-1])
+# print(nome[-2])
+# print(nome[:9])
+# print(nome[10:])
+# print(nome[10:16])
+# print(nome[10:16:2])
+# print(nome[:])
+# print(nome[::-1])
+
+#------------ String de últiplas linhas   --------------#
+
+nome = "Guilherme"
+
+mensagem = f"""
+    Olá meu nome é {nome},
+    Eu estou aprendendo Python.
+        Essa mensagem tem diferentes recuos.
+"""
+
+print(mensagem)
+
+
+print(
+    """
+    ============= MENU =============
+
+    1 - Depositar
+    2 - Sacar
+    0 - Sair
+
+    ================================
+
+            Obrigado por usar nosso sistema!!!!
+"""
+)
+
+
+print (
+    """
+    ========Bom-Dia!!========"
+    
+    1-Beba água
+    2-Faça exercícios 
+    3-Ore"
+    
+    ===Que a força esteja com você!===
+
+""" )
